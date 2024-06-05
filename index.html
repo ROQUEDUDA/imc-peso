@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div>
-            <label for="">entre com sua altura:</label>
-            <input type="text" id="altura">
+    <form action="">
+        <div class="container">
+            <div>
+                <label for="">entre com sua altura:</label>
+                <input type="number" id="altura">
+            </div>
+    
+            <div>
+                <label for="">entre com seu peso:</label>
+                <input type="number" id="peso">
+            </div>
+    
+            <div>
+               <input type="button" value="calcular imc" onclick="calcular()">
+            </div>
+            </div>
+            <div id="imc"></div>
+            <div id="status">status:</div>
         </div>
-
-        <div>
-            <label for="">entre com seu peso:</label>
-            <input type="text" id="peso">
-        </div>
-
-        <div>
-            <input type="button" value="calcular IMC" onclick="calculara()">
-        </div>
-        <div> id="imc>Seu IMC e:</div>
-        <div>id="status">status:</div>
-    </div>
+    </form>
+    
 </body>
 </html>
